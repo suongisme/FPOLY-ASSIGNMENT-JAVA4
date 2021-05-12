@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+    outline: none;
+    border: none;
+}
+
+.channel {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 109px;
+    margin-top: 20px;
+}
+
+.channel__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border: 1px solid;
+    height: 100px;
+}
+
+.info {
+    display: flex;
+}
+
+.info__avatar {
+    width: 50px;
+}
+
+.info__avatar > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.info__profile {
+    margin-left: 20px;
+}
+
+.profile__name {
+    font-size: 2rem;
+}
+
+.profile__email {
+    font-size: 1.4rem;
+}
+
+.button {
+    display: flex;
+}
+
+
+.btnProfile,.btnAdd {
+    background-color: blue;
+    min-width: 100px;
+    line-height: 45px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.channel__videos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px
+
+}
+
+table {
+    width: 100%;
+}
+
+td,th {
+    max-width: 100px;
+    text-align: center;
+}
+
+th {
+    font-size: 1.9rem;
+}
+
+td {
+    font-size: 1.3rem;
+    height: 80px;
+}
+
+tr:hover {
+    background-color: rgb(173, 171, 171);
+    color: white
+}
+
+
+.fas {
+    font-size: 2rem;
+    cursor: pointer;
+}

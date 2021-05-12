@@ -1,0 +1,25 @@
+.container__nav {
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    background: white;
+    height: 100%
+}
+
+.nav__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 1.2rem;
+}
+
+.nav__icon > i  {
+	line-height: 30px;
+}
+
+.nav__icon:hover {
+    background: rgb(242, 242, 242) ;
+}

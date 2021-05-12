@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.container__screen {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.screen__videos {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.screen__video {
+    width: 277px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.screen__video:hover {
+    background: rgb(242, 242, 242);
+}
+
+.video__poster {
+    height: 160px;
+}
+
+.video__poster>img {
+    width: 100%;
+    height: 100%
+}
+
+.video__info {
+    display: flex;
+    flex-grow: 1;
+}
+
+.info__pic {
+    width: 50px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.pic__author {
+    font-size: 3rem;
+}
+
+.info__desc {
+    flex-grow: 1;
+    padding: 10px 0;
+    margin-left: 15px;
+}
+
+.desc__title {
+    -webkit-box-orient: vertical;
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 36px;
+}
+
+.desc__author {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #606060;
+}
+
+.desc__view {
+    font-size: 1.3rem;
+    color: #606060;
+}
+
+.desc__date {
+    font-size: 1.3rem;   
+    color: #606060;
+}
+
+.screen__suggest-bar {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+    width: 1186px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    position: fixed;
+    background: white;
+}
+
+.screen__suggest-bar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.screen__suggest-bar::-scrollbar {
+	
+}
+
+.screen__suggest-bar > p {
+    display:inline-block;
+    background: rgb(242, 242, 242);
+    border: 1px solid rgb(217, 217, 217);
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+.acc__img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #e5e5e5;
+}
+
+

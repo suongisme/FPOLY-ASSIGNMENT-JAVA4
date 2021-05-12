@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: black;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile {
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.profile__form {
+    border: 1px solid #dadce0;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+
+.profile--padding-small {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile--padding-small:not(:first-child) {
+    border-top: 1px solid #dadce0;
+}
+
+
+.head__text--large {
+    font-size: 2.5rem;
+}
+
+.head__text--small {
+    font-size: 1.4rem;
+    color: #5f6368;
+}
+
+label {
+    min-width: 100px;
+    font-size: 1.5rem;
+    align-self: center;
+    color: #5f6368;
+}
+
+.text--large {
+    line-height: 25px;
+    flex-grow: 1;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnSubmit {
+    padding: 10px 26px;
+    background-color: #1973e8;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.btn__btnBack {
+    color: #1973e8;
+    font-size: 1.5rem;
+}
+
+#photo {
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.text--small {
+    font-size: 1.2rem;
+}
+
+select {
+    flex-grow: 1;
+    height: 25px;
+    background: white;
+    font-size: 2rem;
+    padding-left: 6px;
+}
+
+option {
+	font-size: 1.6rem;
+}
+
+.profile__active {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile__active > p {
+    font-size: 2rem;
+    color: #1973e8
+}
+
+.active__toggle {
+    position: relative;
+    background-color: rgb(185, 184, 184);
+    min-width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.active__toggle span {
+    background-color: white;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked~label>span {
+    transform: translateX(20px);
+}
+
+input:checked~.active__toggle {
+    background-color: #1973e8;
+}
+

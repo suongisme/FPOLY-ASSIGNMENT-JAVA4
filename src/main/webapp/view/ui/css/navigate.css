@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border: none;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+}
+
+i {
+    font-size: 2rem;
+    color: grey
+}
+
+.head__icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 177px;
+}
+
+.icon__bars {
+    flex-grow: 1;
+    text-align:center;
+}
+
+.icon__yt {
+    width: 100px;
+}
+
+.head__search {
+    width: 728px;
+    display: flex;
+    height: 32px;
+}
+
+.search__bar  {
+    flex-grow: 1;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+}
+
+.search__button {
+    width: 79px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+}
+
+.search__button > i {
+    font-size: 1.4rem;
+}
+
+.search__mic {
+    width: 30px;
+    display: flex;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.fa-microphone {
+	align-self: center;
+}
+
+.head__acc {
+    width: 225px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.acc__img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #e5e5e5;
+}
+
+.acc__text-login {
+	border: 1px solid;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.user {
+    display: none;
+    flex-direction: column;
+    width: 260px;
+    height: 100px;
+    z-index: 1000;
+    position: fixed;
+    background: white;
+    right: 71px;
+    top: 13px;
+    height: 100%;
+}
+
+.user__info {
+    display: flex;
+    height: 100px;
+}
+
+.user-info__pic {
+    width: 25%;
+    width: 25%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.user-info__pic img {
+    border: 1px solid #a7a1a1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.user-info__acc {
+    padding: 10px;
+}
+
+.acc__name {
+    line-height: 25px;
+    font-size: 1.4rem;
+}
+
+.acc__email {
+    line-height: 25px;
+    font-size: 1.4rem;
+}
+
+.acc__name,.acc__email {
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    width: 180px;
+}
+
+.acc__action {
+    line-height: 25px;
+    color: blue;
+    font-size: 1.5rem;
+}
+
+.user__action {
+    padding: 10px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.action__line {
+    display: flex;
+    padding: 10px 0;
+}
+
+.line__text {
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+.line__icon {
+    align-self: center;
+    font-size: 2.4rem;
+}
+
+.user__utils {
+    padding: 10px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.utils__line {
+    padding: 8px 0;
+    display: flex;
+}

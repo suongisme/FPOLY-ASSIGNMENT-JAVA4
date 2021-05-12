@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	
+	<display-name>Assignment</display-name>
+	
+	<!-- prefix of where store image of user -->
+	<context-param>
+		<param-name>path-image-user-prefix</param-name>
+		<param-value>user-image/user/</param-value>
+	</context-param>
+	
+	<!-- prefix of where store image of video -->
+	<context-param>
+		<param-name>path-image-video-prefix</param-name>
+		<param-value>user-image/video/</param-value>
+	</context-param>
+	
+	<!-- suffix of both -->
+	<context-param>
+		<param-name>path-suffix</param-name>
+		<param-value>.png</param-value>
+	</context-param>
+	
+	<!-- check login -->
+	<filter>
+		<filter-name>login-filter</filter-name>
+		<filter-class>poly.pt15307.sof3011.filter.LoginFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>login-filter</filter-name>
+		
+		<url-pattern>/user/profile</url-pattern>
+		<url-pattern>/user/loved</url-pattern>
+		<url-pattern>/user/myvideo</url-pattern>
+		
+		<url-pattern>/video/delete</url-pattern>
+		<url-pattern>/video/edit</url-pattern>
+		<url-pattern>/video/add</url-pattern>
+		
+		<url-pattern>/react</url-pattern>
+	</filter-mapping>
+	
+	<!-- check user active -->
+	<filter>
+		<filter-name>active-filter</filter-name>
+		<filter-class>poly.pt15307.sof3011.filter.Active</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>active-filter</filter-name>
+		
+		<url-pattern>/user/profile</url-pattern>
+		<url-pattern>/user/loved</url-pattern>
+		<url-pattern>/user/myvideo</url-pattern>
+		
+		<url-pattern>/video/delete</url-pattern>
+		<url-pattern>/video/edit</url-pattern>
+		<url-pattern>/video/add</url-pattern>
+		
+		<url-pattern>/react</url-pattern>
+	</filter-mapping>
+	
+	<!-- check user when delete or edit video -->
+	<filter>
+		<filter-name>video-auth</filter-name>
+		<filter-class>poly.pt15307.sof3011.filter.VideoAuth</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>video-auth</filter-name>
+		
+		<url-pattern>/video/delete</url-pattern>
+		<url-pattern>/video/edit</url-pattern>
+	
+	</filter-mapping>
+	
+	<!-- check user watch video or not -->
+	<filter>
+		<filter-name>watch-video</filter-name>
+		<filter-class>poly.pt15307.sof3011.filter.WatchVideo</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>watch-video</filter-name>
+		<url-pattern>/react</url-pattern>
+	</filter-mapping>
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/not-found-page.jsp</location>
+	</error-page>
+	
+	<session-config>
+		<session-timeout>1440</session-timeout>
+		<cookie-config>
+			<http-only>true</http-only>
+			<max-age>86400</max-age>
+		</cookie-config>
+
+		<tracking-mode>COOKIE</tracking-mode>
+	</session-config>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
