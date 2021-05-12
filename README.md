@@ -10,5 +10,8 @@ Cho phép người dùng đăng tải video, quản lý video cá nhân.
 - Thêm, sửa,xóa video
 - Like/Dislike video
 
-## Database
-![Database-Diagram](https://drive.google.com/uc?id=1DjYm5O5Q5rNOR4jeNdfZKY8m71msFlCB)
+## Công nghệ
+- Servlet, Hibernate, Mysql
+
+## Database-Diagram
+![Database-Diagram](https://drive.google.com/uc?export=view&id=1DjYm5O5Q5rNOR4jeNdfZKY8m71msFlCB)
